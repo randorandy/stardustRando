@@ -19,4 +19,6 @@ class Game:
     all_locations: dict[str, Location]
     area_rando: bool
     connections: list[tuple[AreaDoor, AreaDoor]]
+    seed: int
+    item_placement_spoiler: str = ""
     door_data: Mapping[AreaDoor, Union[Item, LogicShortcut]] = field(default_factory=door_factory)
